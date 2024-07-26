@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+body{
+    background: url("./img/image_casa.jpeg");
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+.container{
+    background-color: #646464;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; */
+}
+.input_task{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+}
+.button_add{
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 20px;
+    padding: 0 15px;
+    float: right;/*colocar ele para a direita*/
+    cursor: pointer;
+}
+.button_add:hover{
+    opacity: 0.8;
+}
+/*Quando o usuario clicar no botão
+ele vai ficar mais transparente ainda*/
+.button_add:active{
+    opacity: 0.4;
+}
+
+.list_ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+.list_li{
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 4px 10px rgba(94, 93, 93, 0.776);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.list_li:hover .icon{
+    opacity: 1;
+}
+.fa-check{
+    color: rgb(3, 255, 16);
+    font-size: 2em;
+    transition: opacity 0.5s ease-in-out; 
+}
+.fa-trash{
+    color: rgb(255, 3, 3);
+    font-size: 2em;
+    transition: opacity 0.5s ease-in-out;
+    /*transição da opacidade dele com uma entrada
+    e saida com a mesma transição de 0.5s ease-in-out*/ 
+}
+.icon{
+    padding: 0 15px;
+    opacity: 0;
+    /*Aqui os item fica oculto
+    como display none*/
+}
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
